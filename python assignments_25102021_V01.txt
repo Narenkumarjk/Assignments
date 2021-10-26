@@ -1,0 +1,78 @@
+=====================================================================
+lst=[]
+cntr =  int(input("Enter how many elements do you want to enter:"))
+
+for i in range(cntr):
+    lst.append(int(input("Enter the Value:")))
+
+even_lst=[]
+odd_lst =[]
+Zero_cntr=0
+
+print(lst)
+for x in lst:
+
+    if x%2==0 and x!=0:
+        print
+        even_lst.append(x)
+    elif x%2!=0:
+        odd_lst.append(x)
+    else:
+        Zero_cntr +=1
+
+
+print("The list of even numbers are" , even_lst)
+print("The list of Odd numbers are" , odd_lst)
+print("The number of zeros in the list: ",Zero_cntr)
+
+=====================================================================
+
+a = int(input("Enter a numeric value: "))
+inc = 0
+
+# Fix the increment based on the Input Value if possitive +1 else -1
+if a < 0:
+    inc = -1
+else:
+    inc = 1
+
+for i in range(0,a+inc,inc):
+    if i%3==0 and i%5==0 and i!=0:
+        print(i , "is multiple of 3 & 5 -> Fizzbuzz")
+    elif i%3==0 and i!=0:
+        print(i , "is multiple of 3 -> Fizz")
+    elif i % 5 == 0 and i != 0:
+        print(i, "is multiple of 5 -> buzz")
+    else:
+        print(i, "is not  multiple of 3 & 5 -> None")
+
+=====================================================================
+
+# Using Wile loop to continue until Flag is Set
+# Collect user input to a List
+# loop Thru the List 
+
+
+Flag = 'Y'
+while Flag != 'N':
+    lst=[]
+    a = int(input("Enter How many values you want to Enter: "))
+    for i in range(a):
+        lst.append(int(input("Enter your Value: ")))
+    print(lst)
+
+    for x in lst:
+        if x > 1:
+            for i in range(2, x):
+                if x % i == 0:
+                    print(x, "is not prime number")
+                    break
+            else:
+                print(x, "is Prime Number")
+
+        elif x==1 or x==0:
+            print(x, "is not a prime Number")
+        else:
+            print(x, "is Invalid Number")
+
+    Flag = input("Do You Want to continue: ")
