@@ -1,0 +1,96 @@
+Task1:
+
+a = [10,12,15,16,18,19,0,3,0]
+
+The list of even numbers are [10,12,16,18]
+The List of odd numbers are [15,19,3]
+The number of zeros in the list 2
+
+============================
+
+#Task1:
+
+#The list of even numbers are [10,12,16,18]
+#The List of odd numbers are [15,19,3]
+#The number of zeros in the list 2
+
+lst = [10,12,15,16,18,19,0,3,0]
+even_lst=[]
+odd_lst =[]
+Zero_cntr=0
+
+for x in lst:
+
+    if x%2==0 and x>0:
+        even_lst.append(x)
+    elif x%2!=0:
+        odd_lst.append(x)
+    else:
+        Zero_cntr +=1
+
+print("The list of even numbers are" , even_lst)
+print("The list of Odd numbers are" , odd_lst)
+print("The number of zeros in the list: ",Zero_cntr)
+
+============================
+
+Task2:
+
+#Get one integer from user
+#26
+
+multiple of 3 ==> Fizz
+multiple of 5  ==> buzz
+multiple of 3 and 5 ==> Fizzbuzz
+not a multiple ==> None
+
+#0  None
+#1  None
+#2  None
+#3  Fizz
+#5  Buzz
+#15 Fizzbuzz
+============================================
+#Get one integer from user
+#26
+
+#multiple of 3 ==> Fizz
+#multiple of 5  ==> buzz
+#multiple of 3 and 5 ==> Fizzbuzz
+#not a multiple ==> None
+
+a = int(input("Enter a numeric value: "))
+
+for i in range(a+1):
+    if i%3==0 and i%5==0 and i!=0:
+        print(i , "is multiple of 3 & 5 -> Fizzbuzz")
+    elif i%3==0 and i!=0:
+        print(i , "is multiple of 3 -> Fizz")
+    elif i % 5 == 0 and i != 0:
+        print(i, "is multiple of 5 -> buzz")
+    else:
+        print(i, "is not  multiple of 3 & 5 -> None")
+
+============================================
+
+Task3:
+
+#Get one number from user
+#Check whether prime or non prime
+
+========================
+a = int(input("Enter a numeric value: "))
+
+if a > 1:
+    for i in range(2,a):
+        if a%i==0:
+            print(a, "is not prime number")
+            break
+    else:
+        print(a, "is Prime Number")
+
+else:
+    print(a, "is not a prime Number")
+
+
+========================
