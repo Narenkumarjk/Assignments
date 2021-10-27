@@ -1,0 +1,153 @@
+#1) Get one string from the user Identify the middle character of the string
+
+str2 = input("Enter the String:")
+print(len(str2))
+print("Mid value of :","'",str2,"'" ,'is', len(str2)//2)
+print("Mid Character of string is ", str2[len(str2)//2])
+
+#2) Get two characters from user  example: "java" "groovy"  java6groovy4
+#  "pi" "mathematics"  ===> pi15mahematics2
+
+str1 = input("Enter the String:")
+str2 = input("Enter the String:")
+
+len1 =  str(len(str1))
+len2 =  str(len(str2))
+
+print(str1+len1+str2+len2 )
+
+============================================================================================
+
+#Create an empty list (two ways)
+#Concatenate with [5,6,7,8]
+#add 8,9,1,5,6,7,8,1 elements to that list
+#Find frequency of 8 (count)
+#find the mean of the list
+#find sum (List) + min + Max
+#Find median of the list
+#remove duplicates from list and give output in the format of tuple
+
+lst = []
+tup = (5,6,7,8)
+lst1 = list(tup)
+
+_list = lst+lst1
+
+print(_list)
+
+cntr = int(input("Enter how many value needs to be added:"))
+
+for i in range(cntr):
+    a = int(input("Enter the Value:"))
+    _list.append(a)
+
+print("Data in list are :" , _list)
+print("Number of times 8 occured in list :", _list.count(8))
+
+print("Max value in list is: " ,max(_list) ,"\n","Min Value in List is: " , min(_list))
+
+# Sorting to find the Median
+_list.sort()
+
+# Median Logic:
+if (len(_list))%2!=0:
+   print("Median of list is" ,_list[ int(len(_list)/2)])
+else:
+    print( "Median of list is", ( _list[int(len(_list) / 2)-1] + _list[int((len(_list) / 2))] )/2 )
+
+# Mean and SUM:
+tot = 0
+for c in _list:
+    tot = tot + c
+print("Mean of the list is:" , tot/len(_list))
+print("Sum of the list is :", tot)
+
+set = set(_list)
+print(set)
+tup = tuple(set)
+print("Unique Values in Tuple  are:" , tup)
+
+
+
+============================================================================================
+Task2
+
+
+#a = [1,2,3,4,[100,101,102,"Computer_science"],200,203]
+
+#Extract
+#science
+#computer
+
+a = [1,2,3,4,[100,101,102,"Computer_science"],200,203]
+
+
+for i in a:
+    if type(i)== list:
+        for x in i:
+
+            if type(x)==str:
+                var1 = x
+                _var1, _var2 =(var1.split('_'))
+                print(_var2,'\n', _var1)
+
+
+============================================================================================
+
+#Task3
+a = [1,2,3,4,[101,102,103,[201,202,[999]], 666, 777]]
+
+#Extract
+#666
+#201
+#102
+#999
+#777
+
+print(a[4][4])
+print(a[4][3][0])
+print(a[4][1])
+print(a[4][3][2][0])
+print(a[4][5])
+============================================================================================
+#Task4:
+
+Li1 = [2,3,"python","hello",4,5,0]  
+
+#Extract
+#ll
+#thon
+
+a= ( Li1[3] )
+print(a[2:4])
+b= ( Li1[2] )
+print(b[2:])
+============================================================================================
+
+
+_flag = 'Y'
+
+def lst_append(cntr):
+    for i in range(cntr):
+        lst.append(int(input("Enter Value:")))
+
+def chk_prime(lst):
+    for i in lst:
+        if i < 0:
+            print(i ,"Is Invalid Entry")
+        elif i == 1 or i%2==0 or i==0:
+            print(i , "Is Not a Prime Number")
+        else:
+            print(i, "Is Prime Number")
+
+
+while _flag !='N':
+    cntr = int(input("Enter  the number of entries to be made:"))
+    lst = []
+    lst_append(cntr)
+    print(lst)
+    chk_prime(lst)
+    _flag = input("Do you wist to continue: ")
+
+
+============================================================================================
