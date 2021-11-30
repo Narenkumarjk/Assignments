@@ -1,0 +1,63 @@
+{
+  "Quiz Questions":
+          [
+            {
+              "question1 :": "What is a correct syntax to output 'Hello World' in Python?",
+                "options :": [
+                    "1.p('hello world')",
+                    "2.print('Hello world')",
+                    "3.echo('Hello world')",
+                    "4.echo 'Hello World'"
+                ],
+                "answer": 2
+            },
+            {
+                "question2 :": "How do you insert COMMENTS in Python code?",
+                "options :": [
+                    "1.# this is Comment",
+                    "2.// This is Comment",
+                    "3.?? This is Comment",
+                    "4.** This is Comment"
+                ],
+                "answer": 1
+            },
+            {
+                "question3 :": "Which one is NOT a legal variable name?",
+                "options :": [
+                    "1.MyVAR",
+                    "2.myvar",
+                    "3.9myvar",
+                    "4._myvar"
+                ],
+                "answer": 3
+            },
+            {
+                "question4 :": "How do you create a variable with the numeric value 5?",
+                "options :": [
+                    "1.x = 5",
+                    "2.x= int(5)",
+                    "3.Both 1 & 2 are correct"
+                ],
+                "answer": 3
+            },
+            {
+                "question5 :": "What is the correct file extension for Python files?",
+                "options :": [
+                    "1.'.python'",
+                    "2. '.py",
+                    "3.'.pt'",
+                    "4.'pyth'"
+                ],
+                "answer": 2
+            },
+            {
+                "question6 :": "How do you create a variable with the floating number 2.8?",
+                "options :": [
+                    "1.x= 2.8",
+                    "2.x =float(2.8)",
+                    "3.Both 1& 2 are correct"
+                ],
+                "answer": 3
+            }
+          ]
+}
